@@ -3,77 +3,445 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"/>
+   
+          <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+   
+  
+
    <title>Blue Hills</title>
    <link rel="stylesheet" href="ishants.css">
+  
 </head>
 <body>
-  
+  <!--Header-->
   <header>
-     <div class="logo-container"></div>
-      <h1>Blue Hills</h1>
-      <section class="jumbo">
-         <div class="container">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio omnis illo recusandae nisi totam et fugit earum. Eos ad delectus tempora itaque enim amet corporis reprehenderit, distinctio perferendis iure ullam!</h1>
-         </div>
-      </section>
+    <div class="head">
+      <h1 class="head" >Blue Hills</h1>
+      <form>
+         <input class="sc" type="text" name="search" placeholder="    Search...   ">
+       </form>
+   </div>
    </header>
    
+   <!--Navigation Bar-->
    <nav class="mainnav">
       <div class="container">
          <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="#hills">Hill of the month</a></li>
+            <li><a href="#ohills">Other Hills</a></li>
+            <li><a href="#sub">Our Newsletter</a></li>
+            <li><a href="#test">Testimonials</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#power">Contact</a></li>
          </ul>
       
       
       </div>
    </nav>
-  
-   <div class="container">
+  <!--sidebar-->
+   <div class="container1">
       <aside class="sidebar">
-         <h1>0 1 1  1 1 8 2  2 2 4 5</h1>
+         <h1>0 1 1 - 1 1 8 2 - 2 2 4 5</h1>
+         <div class="overlay">
+            <div class="text">Register</div>
+         </div>
       </aside>
    </div>
-   <div class="container">
-      <section class="manali">     
-      <h3>Manali</h3>
-      <img src="manali.jpg" alt="alternate description here" width=40%>
-         <p>Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations in the country. </p>
-      </section> 
-     <section class="shrinagar">
-      <h3>Shrinagar</h3>
-      <img src="india_srinagar.jpg" alt="alternate description here" width="700">
-         <p>Famously known as ‘Heaven on Earth’, Srinagar is located in the union territory of Jammu & Kashmir, on the banks of river Jhelum. As picturesque as the most stunning painting to ever be painted.</p>
-      </section>
-      
-      <section class="ladakh">
-      <h3>Leh-Ladakh</h3>
-      <img src="Ladakh-Home.jpg" alt="alternate description here" width="700">
-         <p>Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October 2019.</p>
+   <!--Hill of the month-->
+   <div class="container2">
+      <h1 id="hills">Hill of the month</h1>
+
+         <section class="manali">     
+            <h2 style="padding-left: 5%">Manali</h2>
+            <img class="imgmanali" src="../photos/manali.jpg" alt="alternate description here" width=40%>
+               <p>Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations in the country.
+               While this place is a blessing for adventure seekers because of the tall mountains and hills that coax activities like skiing, paragliding, climbing, biking and trekking, at the same time, the town also attracts the sloppy travelers to book Manali tour packages and enjoy the calmness and positive vibes of the place. Located on the way to popular destinations such as Ladakh and Spiti, it is a famous stopover which is included in most of the North India tour packages.
+              <br>
+
+             <br>   Elevation: 2,050 m
+               <br>   Weather: 9 °C, Wind NE at 3 km/h, 63% Humidity
+               <br>   Population: 8,096 (2011)
+               <br>   District: Kullu
+               <br>   Local time: Saturday, 8:38 am
+               <br>   Area code: +91190
+               </p>
          </section>
+      </div>
+   
+        
+<div class="w3-container">
+<!--Other Hills-->
+<div id="ohills" class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Manali')">Manali</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Shrinagar')">Shrinagar</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Leh')">Leh-Ladakh</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Darjeeling')">Darjeeling</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Shimla')">Shimla</button>
+</div>
 
-         <section class="darjeeling">        
-      <h3>Darjeeling</h3>
-      <img src="Darjeeling.jpg" alt="alternate description here" width="700">
-         <p>Jaw-dropping locales, mesmerising sunrises, the untouched beauty of the hills, the old-world charm of the past, and the welcoming smiles of the local people all add up to make Darjeeling one of the most beautiful hill stations in Eastern part of India. </p>
-      </section>
-
-      <section class="shimla">
-      <h3>Shimla</h3>
-      <img src="SHIMLA.jpeg" alt="alternate description here" width="700">
-         <p>Shimla is the capital Himachal Pradesh in India and a popular hill-station among Indian families and honeymooners. Situated at the height of 2200m, Shimla was the summer capital of British India. </p>
-     </section>
+<div id="Manali" class="w3-container city">
+  <h2>Manali</h2>
+  <p>Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations in the country.</p>
+  <div class="w3-row-padding">
+   <div class="w3-col s3 w3-container">
+   <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+     <img src="../photos/manali.jpg" alt="Nature" style="width:100%">
+   </a>
    </div>
+   <div class="w3-col s3 w3-container">
+     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+       <img src="../photos/manali1.webp" alt="Snow" style="width:100%">
+     </a>
+   </div>
+   <div class="w3-col s3 w3-container">
+     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+       <img src="../photos/manali2.jpg" alt="Mountains" style="width:100%">
+     </a>
+   </div>
+   <div class="w3-col s3 w3-container">
+     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+       <img src="../photos/manali3.jpg" alt="Lights" style="width:100%">
+     </a>
+   </div>
+ </div><br>
+ 
+ <div id="Nature" class="picture w3-display-container" style="display:none">
+   <img src="../photos/manali.jpg" alt="Nature" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Hidimba Temple</div>
+ </div>
+ 
+ <div id="Snow" class="picture w3-display-container" style="display:none">
+   <img src="../photos/manali1.webp" alt="Snow" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Adventure Sports</div>
+ </div>
+ 
+ <div id="Mountains" class="picture w3-display-container" style="display:none">
+   <img src="../photos/manali2.jpg" alt="Mountains" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+ </div>
+ 
+ <div id="Lights" class="picture w3-display-container" style="display:none">
+   <img src="../photos/manali3.jpg" alt="Lights" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-">Fun Activities</div>
+ </div>
+ 
+ <script>
+ function openImg(imgName) {
+   var i, x;
+   x = document.getElementsByClassName("picture");
+   for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+   }
+   document.getElementById(imgName).style.display = "block";
+ }
+ </script>
+ 
+</div>
+
+<div id="Shrinagar" class="w3-container city" style="display:none">
+  <h2>Shrinagar</h2>
+  <p>Famously known as ‘Heaven on Earth’, Srinagar is located in the union territory of Jammu & Kashmir, on the banks of river Jhelum. As picturesque as the most stunning painting to ever be painted.</p> 
+  <div class="w3-row-padding">
+   <div class="w3-col s3 w3-container">
+   <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+     <img src="../photos/india_srinagar.jpg" alt="Nature" style="width:100%">
+   </a>
+   </div>
+   <div class="w3-col s3 w3-container">
+     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+       <img src="../photos/shri1.jpg" alt="Snow" style="width:100%">
+     </a>
+   </div>
+   <div class="w3-col s3 w3-container">
+     <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+       <img src="../photos/shri2.jpg" alt="Mountains" style="width:100%">
+     </a>
+   </div>
+   <div class="w3-col s3 w3-container">
+     <a href="javascript:void(0)" class="w3-hover-opacity" onclick='openImg("Lights");'>
+       <img src="../photos/Pahalgam.jpg" alt="Lights" style="width:100%">
+     </a>
+   </div>
+ </div><br>
+ 
+ <div id="Nature" class="picture w3-display-container" style="display:none">
+   <img src="../photos/india_srinagar.jpg" alt="Nature" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Houseboat</div>
+ </div>
+ 
+ <div id="Snow" class="picture w3-display-container" style="display:none">
+   <img src="../photos/shri1.jpg" alt="Snow" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Dal Lake</div>
+ </div>
+ 
+ <div id="Mountains" class="picture w3-display-container" style="display:none">
+   <img src="../photos/shri2.jpg" alt="Mountains" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+ </div>
+ 
+ <div id="Lights" class="picture w3-display-container" style="display:none">
+   <img src="../photos/Pahalgam.jpg" alt="Lights" style="width:100%">
+   <span onclick="this.parentElement.style.display='none'" 
+   class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+   <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
+ </div>
+ 
+ <script>
+ function openImg(imgName) {
+   var i, x;
+   x = document.getElementsByClassName("picture");
+   for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+   }
+   document.getElementById(imgName).style.display = "block";
+ }
+ </script>
+</div>
+
+<div id="Leh" class="w3-container city" style="display:none">
+  <h2>Leh-Ladakh</h2>
+   <p>Ladakh is a union territory in the Kashmir region of India. Formerly falling in the state of Jammu & Kashmir, Ladakh was administered a union territory on 31st October 2019.</p>
+   <div class="w3-row-padding">
+      <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+        <img src="../photos/Ladakh-Home.jpg" alt="Nature" style="width:100%">
+      </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+          <img src="../photos/leh1.jpg" alt="Snow" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+          <img src="../photos/leh2.jpg" alt="Mountains" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+          <img src="../photos/leh3.jpeg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div><br>
+    
+    <div id="Nature" class="picture w3-display-container" style="display:none">
+      <img src="img_nature_wide.jpg" alt="Nature" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Buddhism</div>
+    </div>
+    
+    <div id="Snow" class="picture w3-display-container" style="display:none">
+      <img src="img_snow_wide.jpg" alt="Snow" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Magnetic Hill</div>
+    </div>
+    
+    <div id="Mountains" class="picture w3-display-container" style="display:none">
+      <img src="../photos/leh2.jpg" alt="Mountains" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Pangong Lake</div>
+    </div>
+    
+    <div id="Lights" class="picture w3-display-container" style="display:none">
+      <img src="../photos/leh3.jpeg" alt="Lights" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Indus river</div>
+    </div>
+    
+    <script>
+    function openImg(imgName) {
+      var i, x;
+      x = document.getElementsByClassName("picture");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(imgName).style.display = "block";
+    }
+    </script>
+    
+</div>
+
+<div id="Darjeeling" class="w3-container city" style="display:none">
+   <h2>Darjeeling</h2>
+   <p>Jaw-dropping locales, mesmerising sunrises, the untouched beauty of the hills, the old-world charm of the past, and the welcoming smiles of the local people all add up to make Darjeeling one of the most beautiful hill stations in Eastern part of India.</p>
+   <div class="w3-row-padding">
+      <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+        <img src="../photos/Darjeeling.jpg" alt="Nature" style="width:100%">
+      </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+          <img src="../photos/dar1.jpg" alt="Snow" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+          <img src="../photos/dar2.jpg" alt="Mountains" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+          <img src="../photos/dar3.jpg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div><br>
+    
+    <div id="Nature" class="picture w3-display-container" style="display:none">
+      <img src="../photos/Darjeeling.jpg" alt="Nature" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Toy Rail</div>
+    </div>
+    
+    <div id="Snow" class="picture w3-display-container" style="display:none">
+      <img src="../photos/dar1.jpg" alt="Snow" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Tea Estate</div>
+    </div>
+    
+    <div id="Mountains" class="picture w3-display-container" style="display:none">
+      <img src="../photos/dar2.jpg" alt="Mountains" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Kunchunjunga</div>
+    </div>
+    
+    <div id="Lights" class="picture w3-display-container" style="display:none">
+      <img src="../photos/dar3.jpg" alt="Lights" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Monastary</div>
+    </div>
+    
+    <script>
+    function openImg(imgName) {
+      var i, x;
+      x = document.getElementsByClassName("picture");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(imgName).style.display = "block";
+    }
+    </script>
+    
+ </div>
+ <div id="Shimla" class="w3-container city" style="display:none">
+   <h2>Shimla</h2>
+   <p>Shimla is the capital Himachal Pradesh in India and a popular hill-station among Indian families and honeymooners. Situated at the height of 2200m, Shimla was the summer capital of British India. </p>
+   <div class="w3-row-padding">
+      <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+        <img src="../photos/SHIMLA.jpeg" alt="Nature" style="width:100%">
+      </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+          <img src="../photos/shi2.jpg" alt="Snow" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+          <img src="../photos/shi1.webp" alt="Mountains" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+          <img src="../photos/shi3.png" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div><br>
+    
+    <div id="Nature" class="picture w3-display-container" style="display:none">
+      <img src="img_nature_wide.jpg" alt="Nature" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Church</div>
+    </div>
+    
+    <div id="Snow" class="picture w3-display-container" style="display:none">
+      <img src="img_snow_wide.jpg" alt="Snow" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Toy Train</div>
+    </div>
+    
+    <div id="Mountains" class="picture w3-display-container" style="display:none">
+      <img src="img_mountains_wide.jpg" alt="Mountains" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mall Road</div>
+    </div>
+    
+    <div id="Lights" class="picture w3-display-container" style="display:none">
+      <img src="img_lights_wide.jpg" alt="Lights" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Adventure Sports</div>
+    </div>
+    
+    <script>
+    function openImg(imgName) {
+      var i, x;
+      x = document.getElementsByClassName("picture");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(imgName).style.display = "block";
+    }
+    </script>
+    
+ </div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+
+      
+   
    <br>
    <br>
-   <div >
+   <!--Newsletter-->
+   <div class="info" id="sub" >
    <form action="server.php">
       <fieldset >
-         <legend>Personnal Information:</legend>
+         <legend >Newsletter</legend>
          Full Name:
          <input type="text" name="firstname" value=""><br><br>
          Email:
@@ -82,7 +450,60 @@
          <input type="submit" Value="Submit">
       </fieldset> 
     </form>
-
    </div>
+   
+    <!--Testimials-->
+    <div id="test">
+    <div class="w3-black" id="tour">
+      <div class="w3-container w3-content w3-padding-0" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Testimonials</h2>
+      
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <img src="../photos/guy.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                  <div id="guy">
+                  <h4><b>Ben</b></h4>
+                  <h6 class="w3-opacity ">CEO of Tecet</h6>
+                  <h6>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h6>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">His Experience</button>
+                  </div>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="../photos/girl.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <h5><b>Lisa</b></h5>
+              <h6 class="w3-opacity">Entepreneur</h6>
+              <h6>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h6>
+              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Her Experience</button>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="../photos/couple.webp" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <h5><b>Rick and Stacy</b></h5>
+              <h6 class="w3-opacity">Travellers</h6>
+              <h6>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h6>
+              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Their Experience</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!--Contacts-->
+  <div id="power">
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Project by Ishant Sehrawat</p>
+</footer>
+</div>
 </body>
 </html>
